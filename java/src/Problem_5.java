@@ -10,7 +10,7 @@ import java.sql.SQLSyntaxErrorException;
 public class Problem_5 {
     public static void main(String[] args) {
         //获取字符串
-        String str = "We  are Happy";
+        String str = "   ";
         //替换字符串
         long start = System.nanoTime();
         str = solution_2(str);

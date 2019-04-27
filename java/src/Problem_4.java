@@ -15,12 +15,15 @@ public class Problem_4 {
         };
         int target = 3;
         //判断是否包含数
+        long start = System.nanoTime();
         boolean result = solution_2(arr, target);
+        long end = System.nanoTime();
         //输出结果
         System.out.println(result);
+        System.out.println("总共用时(ns)："+(end-start));
     }
 
-    //判断是否包含某个数,先比较中间，后遍历，时间负责
+    //判断是否包含某个数,先比较中间，后遍历，时间性能非常低
     public static boolean solution_1(int[][] arr, int target) {
         //获取行列数
         int rows = arr.length;
