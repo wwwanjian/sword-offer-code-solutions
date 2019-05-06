@@ -15,14 +15,14 @@ public class Problem_26 {
         Node_26 node_A_4 = new Node_26(4);
         Node_26 node_A_5 = new Node_26(5);
         node_A_1.setpLeft(node_A_2);
-        node_A_1.setpRight(node_A_3);
-        node_A_2.setpLeft(node_A_4);
-        node_A_2.setpRight(node_A_5);
+        node_A_2.setpLeft(node_A_3);
+        node_A_3.setpLeft(node_A_4);
+        node_A_4.setpLeft(node_A_5);
         Node_26 node_B_1 = new Node_26(1);
         Node_26 node_B_2 = new Node_26(2);
         Node_26 node_B_3 = new Node_26(3);
         node_B_1.setpLeft(node_B_2);
-        node_B_1.setpRight(node_B_3);
+        node_B_2.setpLeft(node_B_3);
         //判断是不是子树
         long start = System.nanoTime();
         boolean isChild = isChildTree_2(node_A_1, node_B_1);
